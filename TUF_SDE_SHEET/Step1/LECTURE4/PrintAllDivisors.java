@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.STEP1.LECTURE4;
+package TUF_SDE_SHEET.Step1.LECTURE4;
 
 public class PrintAllDivisors {
 
