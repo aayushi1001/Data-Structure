@@ -11,4 +11,33 @@ package TUF_SDE_SHEET.Array.Easy;
 
 public class IsSortedAndRotated {
 
+    public boolean check(int[] nums) {
+        int dip = 0, dip_index = -1;
+
+        for(int i=1; i<nums.length; ++i) {
+            if(nums[i-1] > nums[i]) {
+                dip++;
+                dip_index = i;
+            }
+        }
+
+        // There should be only one dip
+        if(dip == 0) {
+            return true;
+        }
+
+        // If only one dip is present, last element should be smaller than equal to the first element
+        if(dip == 1) {
+            if(dip_index != 0 && nums[nums.length -1] <= nums[0]) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static void main(String[] args) {
+
+    }
+
 }
