@@ -7,6 +7,8 @@ public class LongestSubarraySum {
 
     // positive + negative
     public int longestSubarray(int[] arr, int k) {
+        // Long: sum till an index i
+        // Integer: the index i
         HashMap<Long, Integer> prefixMap = new HashMap<>();
         int length = 0;
         long sum = 0;
@@ -78,13 +80,16 @@ public class LongestSubarraySum {
             // Note - condition is "<="
             for(int start_index = 0; start_index <= arr.length - size; ++start_index) {
                 int sum = 0;
+
+                // loop to find the sum of subarray of the given size
                 for(int i= start_index; i< start_index + size; ++i) {
                     sum = sum + arr[i];
                 }
                 if(sum == k && length < size) {
                     length = size;
-                    break; // once we have found the subarray of length size,
-                           // we can move to another size rather than checking more sub-arrays of same size
+                    // once we have found the subarray of length size,
+                    // we can move to another size rather than checking more sub-arrays of same size
+                    break;
                 }
             }
         }

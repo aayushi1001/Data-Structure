@@ -1,6 +1,8 @@
 package TUF_SDE_SHEET.Array.Medium;
 
 public class MaximumSubarraySum {
+
+    // Print the subarray with maximum sum
     public static void printSubarray(int[] nums) {
         int sum = 0, max = Integer.MIN_VALUE;
         int start = 0, ansStart =-1, ansEnd = -1;
