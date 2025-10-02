@@ -7,6 +7,9 @@ package TUF_SDE_SHEET.Array.Medium;
 public class SetMatrixZeroBest {
     public static void setZeroes(int[][] arr) {
         int col = -1;
+
+        // The loop should start from 0, otherwise the lookup arrays will get manipulated by its successor elements,
+        // and it would give wrong result for themselves
         for(int i=0; i<arr.length; ++i) {
             for(int j=0; j<arr[0].length; ++j) {
                 if(arr[i][j] == 0) {
@@ -22,11 +25,15 @@ public class SetMatrixZeroBest {
 
         for(int i=arr.length -1; i>=0; --i) {
             for(int j=arr[0].length -1; j>=0; --j) {
-                if(j == 0) {    // (j==0 && col == 0) --- don't do this, it will fail in your second test case
+                // (j==0 && col == 0) --- don't do this, it will fail in your second test case
+                if(j == 0) {
                     if(col == 0) {
                         arr[i][j] = 0;
                     }
-                } else if(arr[0][j] == 0 || arr[i][0] == 0) {  // it should be else if not another if
+                }
+                // it should be else if not another if
+                else if(arr[0][j] == 0 || arr[i][0] == 0) {
+
                     arr[i][j] = 0;
                 }
             }

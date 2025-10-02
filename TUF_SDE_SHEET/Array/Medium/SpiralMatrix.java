@@ -27,6 +27,9 @@ public class SpiralMatrix {
             }
             right--;
 
+            // We are checking these conditions above but these two parameters have been updated after that
+            // So, we need to check the conditions again
+
             //right to left
             //focus on this condition -
             //Even though right>= left here, but we cannot move forward with this loop as it will print same numbers again
