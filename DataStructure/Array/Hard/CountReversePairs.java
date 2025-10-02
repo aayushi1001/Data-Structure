@@ -1,10 +1,8 @@
 package DataStructure.Array.Hard;
 
-import java.util.ArrayList;
+public class CountReversePairs {
 
-public class CountInversions {
-
-    public static int merge1(int[] num, int l, int m, int r) {
+    public static void merge1(int[] num, int l, int m, int r) {
         // finding the length of two arrays
         int n1 = m -l +1;
         int n2 = r - m;
@@ -23,14 +21,12 @@ public class CountInversions {
 
         // process of merging
         int i = 0, j = 0, k = l;
-        int count = 0;
         while(i<n1 && j<n2) {
             if(left[i] <= right[j]) {
                 num[k] = left[i];
                 i++;
             } else {
                 num[k] = right[j];
-                count = count + (n1 - i);
                 j++;
             }
             k++;
@@ -47,42 +43,21 @@ public class CountInversions {
             j++;
             k++;
         }
-
-        return count;
     }
 
-    private static int merge(int[] arr, int low, int mid, int high) {
-        ArrayList<Integer> temp = new ArrayList<>();
-        int left = low;
-        int right = mid + 1;
-
-        int cnt = 0;
-
-        while (left <= mid && right <= high) {
-            if (arr[left] <= arr[right]) {
-                temp.add(arr[left]);
-                left++;
+    public static int countPairs(int[] num, int l, int m, int h) {
+        int count = 0;
+        int i = l, j = m+1;
+        while(i <= m && j <= h) {
+            if(num[i] > 2*num[j]) {
+                count += (m - i + 1);
+                j++;
             } else {
-                temp.add(arr[right]);
-                cnt += (mid - left + 1);
-                right++;
+                i++;
             }
         }
 
-        while (left <= mid) {
-            temp.add(arr[left]);
-            left++;
-        }
-
-        while (right <= high) {
-            temp.add(arr[right]);
-            right++;
-        }
-
-        for (int i = low; i <= high; i++) {
-            arr[i] = temp.get(i - low);
-        }
-        return cnt;
+        return count;
     }
 
     public static int mergeSort(int[] num, int l, int h) {
@@ -93,12 +68,12 @@ public class CountInversions {
         int mid = l + (h - l)/2;
         count += mergeSort(num, l, mid);
         count += mergeSort(num, mid + 1, h);
-        count += merge1(num, l , mid, h);
+        count += countPairs(num, l, mid, h);
+        merge1(num, l , mid, h);
         return count;
     }
 
     public static void main(String[] args) {
-        System.out.println(mergeSort(new int[]{5,3,2,1,4}, 0, 4));
         System.out.println(mergeSort(new int[]{1,3,2,3,1}, 0, 4));
     }
 }

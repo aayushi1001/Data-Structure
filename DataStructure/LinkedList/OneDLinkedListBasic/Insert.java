@@ -1,6 +1,6 @@
-package DataStructure.OneDLinkedListBasic;
+package DataStructure.LinkedList.OneDLinkedListBasic;
 
-import DataStructure.OneDLinkedListBasic.utils.Node;
+import DataStructure.LinkedList.OneDLinkedListBasic.utils.Node;
 
 public class Insert {
     public static Node insertElement(Node head, int k) {

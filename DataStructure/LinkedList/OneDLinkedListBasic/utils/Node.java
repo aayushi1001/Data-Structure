@@ -1,4 +1,4 @@
-package DataStructure.OneDLinkedListBasic.utils;
+package DataStructure.LinkedList.OneDLinkedListBasic.utils;
 
 public class Node {
     public int data;
