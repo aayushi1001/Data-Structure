@@ -1,6 +1,6 @@
-package TUF_SDE_SHEET.Array.Medium;
+package DataStructure.Array.Medium;
 
-import TUF_SDE_SHEET.SortingTechniques.Sorting2.QuickSort;
+import DataStructure.SortingTechniques.Sorting2.QuickSort;
 
 // This is not in place ans but it arranges perfectly
 public class RearrangeConsecutivePositiveAndNegative {

@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.Array.Easy;
+package DataStructure.Array.Easy;
 
 public class Sort012 {
     public void swap(int[] nums, int index1, int index2) {

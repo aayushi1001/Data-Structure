@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.SortingTechniques.Sorting2;
+package DataStructure.SortingTechniques.Sorting2;
 
 public class IterativeMergeSort {
 

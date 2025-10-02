@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.BinarySearch.BSOnArrays;
+package DataStructure.BinarySearch.BSOnArrays;
 
 public class SearchInsertPosition {
 

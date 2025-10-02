@@ -1,6 +1,5 @@
-package TUF_SDE_SHEET.Array.Easy;
+package DataStructure.Array.Easy;
 
-import java.sql.SQLOutput;
 import java.util.HashMap;
 
 public class LongestSubarraySum {

@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.OneDLinkedListBasic;
+package DataStructure.OneDLinkedListBasic;
 
 public class Delete {
 }

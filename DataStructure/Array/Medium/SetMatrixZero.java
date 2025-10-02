@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.Array.Medium;
+package DataStructure.Array.Medium;
 
 //1 1 1
 //0 1 1

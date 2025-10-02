@@ -1,7 +1,4 @@
-package TUF_SDE_SHEET.Array.Hard;
-
-import java.util.ArrayList;
-import java.util.List;
+package DataStructure.Array.Hard;
 
 public class MajorityElementNBy3 {
 

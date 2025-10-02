@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.Basics.Recursion;
+package DataStructure.Basics.Recursion;
 
 public class SumOfNNatural {
 

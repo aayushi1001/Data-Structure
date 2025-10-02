@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.Array.Easy;
+package DataStructure.Array.Easy;
 
 //Before reaching to this solution
 //Take the other step

@@ -1,6 +1,6 @@
-package TUF_SDE_SHEET.OneDLinkedListBasic;
+package DataStructure.OneDLinkedListBasic;
 
-import TUF_SDE_SHEET.OneDLinkedListBasic.utils.Node;
+import DataStructure.OneDLinkedListBasic.utils.Node;
 
 public class Insert {
     public static Node insertElement(Node head, int k) {

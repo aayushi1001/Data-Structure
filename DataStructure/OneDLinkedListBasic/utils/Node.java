@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.OneDLinkedListBasic.utils;
+package DataStructure.OneDLinkedListBasic.utils;
 
 public class Node {
     public int data;

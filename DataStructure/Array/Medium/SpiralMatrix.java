@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.Array.Medium;
+package DataStructure.Array.Medium;
 
 import java.util.*;
 

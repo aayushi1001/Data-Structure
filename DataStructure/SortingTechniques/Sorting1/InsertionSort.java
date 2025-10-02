@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.SortingTechniques.Sorting1;
+package DataStructure.SortingTechniques.Sorting1;
 
 public class InsertionSort {
     public static int[] insertionSort(int[] arr) {

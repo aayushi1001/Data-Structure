@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.Array.Medium;
+package DataStructure.Array.Medium;
 
 public class MajorityElement {
     public static int majorityElement(int[] nums) {

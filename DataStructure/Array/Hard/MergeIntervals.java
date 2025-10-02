@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.Array.Hard;
+package DataStructure.Array.Hard;
 
 
 import java.util.*;

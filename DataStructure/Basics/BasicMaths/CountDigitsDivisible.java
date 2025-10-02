@@ -1,4 +1,4 @@
-package TUF_SDE_SHEET.Basics.BasicMaths;
+package DataStructure.Basics.BasicMaths;
 
 public class CountDigitsDivisible {
 

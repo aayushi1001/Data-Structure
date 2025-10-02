@@ -1,7 +1,4 @@
-package TUF_SDE_SHEET.Array.Medium;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+package DataStructure.Array.Medium;
 
 public class NextPermutation {
     public static void swap(int[] nums, int index1, int index2) {
