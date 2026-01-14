@@ -3,23 +3,25 @@ package DataStructure.LinkedList.OneDLinkedListBasic;
 import DataStructure.LinkedList.OneDLinkedListBasic.utils.Node;
 
 public class Insert {
-    public static Node insertElement(Node head, int k) {
+    public static Node insertElement(Node head, int pos) {
         //Node to be inserted
         Node newNode = new Node(100);
-        if(k == 1) {
+
+        if(pos == 1) {
             newNode.next = head;
             return newNode;
         }
 
-        int pos = 1;
+        // 10 -> 20 -> 30
         Node temp = head;
+        int count = 1;
         while(temp != null) {
-            if(pos == k) {
+            if(count == pos - 1) {
                 newNode.next = temp.next;
                 temp.next = newNode;
                 break;
             }
-            pos++;
+            count++;
             temp = temp.next;
         }
 
