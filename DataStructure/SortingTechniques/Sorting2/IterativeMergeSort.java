@@ -17,6 +17,9 @@ public class IterativeMergeSort {
             for(int l=0; l< n-1; l = l + 2*size) {
 
                 // We have to find the index. So, -1
+                // l is the start index of subarray
+                // m is the middle point
+                // r is the last index of subarray
                 int r = Math.min(l + 2*size -1, n-1);
                 int m = Math.min(l + size -1, n-1);
 
